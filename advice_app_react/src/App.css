@@ -1,0 +1,140 @@
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.Advice-container {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  width: 20rem;
+  height: 11rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header {
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  color: hsl(150, 100%, 66%);
+}
+
+.card {
+  border-radius: 1rem;
+  color: hsl(193, 38%, 86%);
+}
+
+.patter_devider {
+  height: 10px;
+  width: 275px;
+  margin: 0 auto;
+}
+
+button {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 800;
+  margin: 15px 0;
+}
+button:hover {
+  box-shadow: 0 0 20px hsl(150, 100%, 66%);
+}
+
+.dice {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: hsl(218, 23%, 16%);
+  color: hsl(228, 45%, 44%);
+  padding: 10px 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  align-items: baseline;
+  justify-self: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .Advice-container {
+    width: 90%;
+  }
+
+  .patter_devider {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .Advice-container {
+    width: 40rem;
+    height: 20rem;
+    padding: 1rem;
+  }
+
+  .patter_devider {
+    width: 100%;
+  }
+
+  .card p {
+    font-size: 28px;
+  }
+
+  button {
+    bottom: -25px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .dice {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header {
+    font-size: 14px;
+  }
+}
