@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import "./App.css";
 import svg from "../public/icon-dice.svg";
@@ -7,6 +7,9 @@ function App() {
   const [Advice, setAdvise] = useState("");
   const [AdviseID, setAdviseID] = useState(null);
 
+  useEffect(() => {
+    fetchAdvice();
+  }, []);
   const fetchAdvice = async () => {
     const response = await fetch("https://api.adviceslip.com/advice");
     const data = await response.json();
